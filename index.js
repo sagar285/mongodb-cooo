@@ -2,12 +2,13 @@ const express = require("express")
 require("./db")
 const app = express()
 const router =require("./route")
-const router2 =require("./route2")
+// const router2 =require("./route2")
+const router3 =require("./route3")
 
 app.use(express.json());
 
-// app.use(router)
-app.use(router2)
+app.use(router)
+app.use(router3)
 
 
 
