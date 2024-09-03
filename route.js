@@ -28,7 +28,6 @@ Router.post("/employee",async(req,res)=>{
 
 Router.get("/employee",async(req,res)=>{
     const data = await Employee.find({Hobbies:"singing"})
-   
     res.send(exprdata);
 })
 

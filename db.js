@@ -10,6 +10,7 @@ mongoose.connect("mongodb://127.0.0.1:27017/Mongodbcourse").then(()=>{
 
 const EmployeSchema = new mongoose.Schema({
     name:String,
+    gender:String,
     age:Number,
     Hobbies:Array,
     identity:Object,

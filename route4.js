@@ -162,10 +162,6 @@ Router.get("/arrayindexing",async(req,res)=>{
     res.status(200).send({data:data})
 })
 
-
-
-
-
 Router.get("/TextIndexing",async(req,res)=>{
     try {
         await Employee.collection.createIndex({bio:"text" });
